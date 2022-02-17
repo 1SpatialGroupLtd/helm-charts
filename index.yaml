@@ -2,7 +2,16 @@ apiVersion: v1
 entries:
   1integrate:
   - apiVersion: v2
-    created: "2022-02-17T15:52:19.517287025Z"
+    created: "2022-02-17T16:01:18.75439802Z"
+    description: A Helm chart for deploying 1Integrate onto Kubernetes
+    digest: d0c6a7b47e48ccb3638b62698597d99bdc6f18bc00876d79e15c23ba5e79b079
+    name: 1integrate
+    type: application
+    urls:
+    - charts/1integrate-0.1.1.tgz
+    version: 0.1.1
+  - apiVersion: v2
+    created: "2022-02-17T16:01:18.753987454Z"
     description: A Helm chart for deploying 1Integrate onto Kubernetes
     digest: 5f76a465ef6c0438c5cb044fc532dd6aefa24e1d63935bb02413273e33ee1c0e
     name: 1integrate
@@ -10,4 +19,4 @@ entries:
     urls:
     - charts/1integrate-0.1.0.tgz
     version: 0.1.0
-generated: "2022-02-17T15:52:19.516707294Z"
+generated: "2022-02-17T16:01:18.753438277Z"
