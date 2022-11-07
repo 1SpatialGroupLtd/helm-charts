@@ -2,7 +2,16 @@ apiVersion: v1
 entries:
   1integrate:
   - apiVersion: v2
-    created: "2022-09-07T17:48:12.543781425+01:00"
+    created: "2022-11-07T09:55:01.251968812Z"
+    description: A Helm chart for deploying 1Integrate onto Kubernetes
+    digest: 8c068fcd4bc5b23277fc1a72c645bf1d9fe9f15dc89f85c75d7db430a66b56e8
+    name: 1integrate
+    type: application
+    urls:
+    - charts/1integrate-0.5.0.tgz
+    version: 0.5.0
+  - apiVersion: v2
+    created: "2022-11-07T09:55:01.25143926Z"
     description: A Helm chart for deploying 1Integrate onto Kubernetes
     digest: 196612a792c5d482fe12e6375b993a3c86f5bc974acbe1b8225f5b3b42f8d084
     name: 1integrate
@@ -11,7 +20,7 @@ entries:
     - charts/1integrate-0.4.0.tgz
     version: 0.4.0
   - apiVersion: v2
-    created: "2022-09-07T17:48:12.543319188+01:00"
+    created: "2022-11-07T09:55:01.251007743Z"
     description: A Helm chart for deploying 1Integrate onto Kubernetes
     digest: 6faced33cdb606748e6e3309f2e074f5a72f37f320a42b148fb8075effffb100
     name: 1integrate
@@ -20,7 +29,7 @@ entries:
     - charts/1integrate-0.3.0.tgz
     version: 0.3.0
   - apiVersion: v2
-    created: "2022-09-07T17:48:12.542879785+01:00"
+    created: "2022-11-07T09:55:01.250582127Z"
     description: A Helm chart for deploying 1Integrate onto Kubernetes
     digest: 55b25b9ae81e090a7295c6ce218ded363ca5c9282b6c5b9cac3c5a8c7a57c030
     name: 1integrate
@@ -29,7 +38,7 @@ entries:
     - charts/1integrate-0.2.0.tgz
     version: 0.2.0
   - apiVersion: v2
-    created: "2022-09-07T17:48:12.542434893+01:00"
+    created: "2022-11-07T09:55:01.250152255Z"
     description: A Helm chart for deploying 1Integrate onto Kubernetes
     digest: af89d41666d8184a35d506d13d7cd29f4382f230a2e9f097ec1e680297a949f5
     name: 1integrate
@@ -37,4 +46,4 @@ entries:
     urls:
     - charts/1integrate-0.1.0.tgz
     version: 0.1.0
-generated: "2022-09-07T17:48:12.541824168+01:00"
+generated: "2022-11-07T09:55:01.24953305Z"
