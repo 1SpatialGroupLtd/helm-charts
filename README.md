@@ -56,6 +56,15 @@ By default, 1Integrate will deploy with one fixed user: integrate/integrate1 but
 | `integrate.image.pullPolicy` | [Kubernetes container pull policy](https://kubernetes.io/docs/concepts/containers/images/#updating-images) |  `IfNotPresent`. |
 | `integrate.imagePullSecrets` | [Kubernetes image pull secrets](https://kubernetes.io/docs/concepts/configuration/secret/#using-imagepullsecrets) |  `Nil`. |
 | `integrate.log.level` | 1Integrate's logging level, one of `DEBUG`, `INFO`, `WARN`, `ERROR` or `FATAL` |  `WARN`. |
+| `integrate.log.cloud` | Whether 1Integrate should produce cloud friendly logs. This changes the log format to JSON and enables pod annotations to allow log ingestion by the elastic framework via filebeat |  `false`. |
+| `integrate.monitoring.enabled` | Whether monitoring via Elastic APM is enabled |  `false`. |
+| `integrate.monitoring.endpoint` | Elastic APM endpoint |  `Nil`. |
+| `integrate.monitoring.token` | Elastic APM token if required by the above endpoint |  `Nil`. |
+| `integrate.monitoring.environment` | Elastic APM 'environment' value |  `Nil`. |
+| `integrate.monitoring.log.level` | Elastic APM agent log level |  `INFO`. |
+| `integrate.cors.enabled` | Whether CORS is enabled |  `false`. |
+| `integrate.cors.allowed.origins` | The list of allowed origins for CORS |  `false`. |
+| `integrate.jta.timeout` | The JTA timeout value to use in seconds |  `300`. |
 | `integrate.fileStorage.onDisk` | Whether to minimise database writes and store uploaded files on disk rather than in the repository. |  `false`. |
 | `integrate.fileStorage.size` | Storage size to request for the uploaded files (if enabled). |  `1Gi`. |
 | `integrate.fileStorage.storageClass` | Storage class to use for the uploaded files (if enabled), this will vary per cloud provider. |  `default`. |
