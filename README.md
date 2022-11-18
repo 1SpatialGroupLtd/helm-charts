@@ -45,11 +45,19 @@ By default, 1Integrate will deploy with one fixed user: integrate/integrate1 but
 | `integrate.interface.count` | The number of interface replicas to deploy. |  `1`. |
 | `integrate.interface.memory` | The memory in megabytes to make available to interfaces.  This number will be the memory actually available to the application.  The kubernetes memory will be determined from this: requested memory will be +256MB while the overall limit will be +1GB. |  `1024`. |
 | `integrate.interface.opts` | Additional system properties to pass into the interfaces. |  `Nil`. |
+| `integrate.interface.affinity` | Configurable [affinity][] for the 1Integrate Interface Deployment.  |  `{}`. |
+| `integrate.interface.nodeSelector` | Configurable [nodeSelector][] for 1Integrate Interface Deployment. |  `{}`. |
+| `integrate.interface.tolerations` | Configurable [tolerations][] for 1Integrate Interface Deployment. |  `[]`. |
+| `integrate.interface.priorityClassName` | The name of the [PriorityClass][]. |  `Nil`. |
 | `integrate.engine.count` | The number of engine replicas to deploy. |  `1`. |
 | `integrate.engine.memory` | The memory in megabytes to make available to engines.  This number will be the memory actually available to the application.  The kubernetes memory will be determined from this: requested memory will be +256MB while the overall limit will be +1GB. |  `1024`. |
 | `integrate.engine.opts` | Additional system properties to pass into the engines. |  `Nil`. |
 | `integrate.engine.dynamic` | Whether to use dynamic engines or not.  If enabled, the engine count defined above has no effect and engines will be spun up dynamically when sessions start. |  `false`. |
 | `integrate.engine.maxDynamicEngines` | The upper limit of dynamic engines to be able to start.  Use -1 for unlimited.  If the limit is reached, the session will wait until the number of running engines falls below the limit before starting its engine. |  `-1`. |
+| `integrate.engine.affinity` | Configurable [affinity][] for the 1Integrate Engine Deployment.  |  `{}`. |
+| `integrate.engine.nodeSelector` | Configurable [nodeSelector][] for 1Integrate Engine Deployment. |  `{}`. |
+| `integrate.engine.tolerations` | Configurable [tolerations][] for 1Integrate Engine Deployment. |  `[]`. |
+| `integrate.engine.priorityClassName` | The name of the [PriorityClass][]. |  `Nil`. |
 | `integrate.queueTimeout` | The amount of time a session will wait for an engine to become available before erroring.  Use -1 to specify no timeout. |  `-1`. |
 | `integrate.image.registry` | The registry where the 1Integrate docker images can be found, _without_ a trailing slash. |  `Nil`. |
 | `integrate.ingress.host` | The host that will be used to access 1Integrate on. |  `1integrate.local`. |
@@ -199,3 +207,9 @@ integrate:
 ```
 
 Copyright (c) 1Spatial 2021
+
+
+[affinity]: https://kubernetes.io/docs/concepts/configuration/assign-pod-node/#affinity-and-anti-affinity
+[nodeSelector]: https://kubernetes.io/docs/concepts/configuration/assign-pod-node/#nodeselector
+[priorityClass]: https://kubernetes.io/docs/concepts/configuration/pod-priority-preemption/#priorityclass
+[tolerations]: https://kubernetes.io/docs/concepts/configuration/taint-and-toleration/
