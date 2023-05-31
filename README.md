@@ -60,6 +60,8 @@ By default, 1Integrate will deploy with one fixed user: integrate/integrate1 but
 | `engine.nodeSelector` | Configurable [nodeSelector][] for 1Integrate Engine Deployment. |  `{}`. |
 | `engine.tolerations` | Configurable [tolerations][] for 1Integrate Engine Deployment. |  `[]`. |
 | `engine.priorityClassName` | The name of the [PriorityClass][]. |  `Nil`. |
+| `database.validation.enabled` | Whether to validate database connections to the 1Integrate repository, will restore broken connections. |  `true`. |
+| `database.validation.millis` | The time in ms between when the database connections to the 1Integrate repository will be validated. |  `10000`. |
 | `queueTimeout` | The amount of time a session will wait for an engine to become available before erroring.  Use -1 to specify no timeout. |  `-1`. |
 | `image.registry` | The registry where the 1Integrate docker images can be found, _without_ a trailing slash. |  `Nil`. |
 | `ingress.enabled` | Whether 1Integrate needs to be exposed via an ingress. |  `true`. |
