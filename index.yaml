@@ -73,4 +73,15 @@ entries:
     urls:
     - charts/1integrate-0.1.0.tgz
     version: 0.1.0
-generated: "2023-04-19T14:59:08.118930309+01:00"
+  datagateway:
+  - apiVersion: v2
+    appVersion: 2.10.1
+    created: "2023-06-01T12:02:57.3225949+01:00"
+    description: A Helm chart for deploying 1Data Gateway onto Kubernetes
+    digest: 099b407f1a803849f59576f9337c6b2edd056bd7f11b8d5145670ea0601c66dd
+    name: datagateway
+    type: application
+    urls:
+    - charts/datagateway-0.2.0.tgz
+    version: 0.2.0
+generated: "2023-06-01T12:02:57.3203934+01:00"
