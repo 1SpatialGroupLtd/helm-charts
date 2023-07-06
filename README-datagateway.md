@@ -37,6 +37,7 @@ Chart parameters are provided to allow you to configure the location of these de
 
 * `ingress.enabled`: If true, enable a default ingress resource (default true).
 * `ingress.className`: Links ingress resource to an ingress controller (default nginx).
+* `ingress.annotations`: Additional annotations to add to the ingress resource.
 
 
 * `tls.enabled`: If true, enable TLS on the 1DG HTTP service (default false).
