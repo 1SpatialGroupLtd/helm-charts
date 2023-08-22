@@ -11,8 +11,6 @@ By default, 1Integrate will deploy with one fixed user: integrate/integrate1 but
 | `database.url` | Full JDBC connection string for the 1Integrate repository. |
 | `database.username` | 1Integrate repository database username. |
 | `database.password` | 1Integrate repository database password. |
-| `tls.key` | Base64 encoded TLS certificate key, can be for a self-signed certificate. |
-| `tls.crt` | Base64 encoded TLS certificate, can be a self-signed certificate. |
 
 ## Optional Settings
 
@@ -61,6 +59,8 @@ By default, 1Integrate will deploy with one fixed user: integrate/integrate1 but
 | `cacheStorage.size` | Storage size to request for the shared cache data (if enabled). |  `1Gi`. |
 | `cacheStorage.storageClass` | Storage class to use for the shared cache data (if enabled), this will vary per cloud provider. |  `default`. |
 | `tls.enabled` | Whether to deploy with a TLS configuration, port 80 will be exposed if false. |  `true`. |
+| `tls.key` | Base64 encoded TLS certificate key, can be for a self-signed certificate. |
+| `tls.crt` | Base64 encoded TLS certificate, can be a self-signed certificate. |
 | `k8s.masterUrl` | Kubernetes API endpoint accessible from the interface pods. |  `https://kubernetes.default.svc.cluster.local`. |
 | `banner` | HTML to include as a banner on the login page.  Only the following HTML tags are allowed `<h1> <h2> <h3> <h4> <h5> <p> <span> <br> <text> <body> <title> <html> <head> <meta> <b> <strong> <i> <em> <mark> <small> <del> <ins> <sub> <sup>`  |  `Nil`. |
 | `office_webhook.url` | Office 365 webhook URL for delivering session state notifications to applications such as Microsoft Teams. |  `Nil`. |
@@ -80,6 +80,19 @@ authentication:
     newuser1: password123
     newuser2: password123
     newuser3: password123
+```
+
+### OpenID Connect
+1Integrate can also be configured to use OpenID Connect for User Interface authentication.
+> OpenID Connect support requires 1Integrate 4.2.0+ and helm chart 1.1.0+
+
+For example:
+```yaml
+authentication:
+  oidc:
+    enabled: true
+    providerUrl: https://myoidcprovider
+    sslRequired: all
 ```
 
 ### LDAP
@@ -134,6 +147,36 @@ authentication:
     newuser1: 1int-admin
     newuser2: 1int-user
     newuser3: 1int-user
+interface:
+  count: 1
+engine:
+  count: 2
+cacheStorage:
+  shared: true
+tls:
+  key: aWFtYXNlY3JldHRsc2tleQ
+  crt: aWFtYXNlY3JldHRsc2NlcnRpZmljYXRl
+image:
+  registry: cloudcr.io
+ingress:
+  host: 1integrate.cloud.com
+```
+
+### OpenID Connect
+```yaml
+version: 4.2.0
+licence:
+  file: aWFtYXNlY3JldGxpY2VuY2VmaWxl
+database:
+  driver: postgresql
+  url: jdbc:oracle:thin:@postgres/postgres
+  username: postgres
+  password: postgres
+authentication:
+  oidc:
+    enabled: true
+    providerUrl: https://myoidcprovider
+    sslRequired: all
 interface:
   count: 1
 engine:
