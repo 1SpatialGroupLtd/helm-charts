@@ -2,7 +2,16 @@ apiVersion: v1
 entries:
   1integrate:
   - apiVersion: v2
-    created: "2023-04-19T14:59:08.123053791+01:00"
+    created: "2023-08-23T09:26:11.204941235+01:00"
+    description: A Helm chart for deploying 1Integrate onto Kubernetes
+    digest: 725f343d028c39ff64507b89fd4c429bdcc1b5371893aafde06cca7e8914523e
+    name: 1integrate
+    type: application
+    urls:
+    - charts/1integrate-1.1.0.tgz
+    version: 1.1.0
+  - apiVersion: v2
+    created: "2023-08-23T09:26:11.204240338+01:00"
     description: A Helm chart for deploying 1Integrate onto Kubernetes
     digest: 41e97d490a5ae333d8913b62b567737eced46fca233c09a4a10c77272ec61c35
     name: 1integrate
@@ -11,7 +20,7 @@ entries:
     - charts/1integrate-1.0.0.tgz
     version: 1.0.0
   - apiVersion: v2
-    created: "2023-04-19T14:59:08.122432893+01:00"
+    created: "2023-08-23T09:26:11.20362744+01:00"
     description: A Helm chart for deploying 1Integrate onto Kubernetes
     digest: 22e8e6477cc0a5b2ac35c83f6a8fe9abeb115efd27f2ca105b56341fb6b3164e
     name: 1integrate
@@ -20,7 +29,7 @@ entries:
     - charts/1integrate-0.7.0.tgz
     version: 0.7.0
   - apiVersion: v2
-    created: "2023-04-19T14:59:08.121849296+01:00"
+    created: "2023-08-23T09:26:11.203055842+01:00"
     description: A Helm chart for deploying 1Integrate onto Kubernetes
     digest: f4c2ad32cde0d60ead765f291bb32e8dc8d9f2cf89c1ab2cd133618388896f53
     name: 1integrate
@@ -29,7 +38,7 @@ entries:
     - charts/1integrate-0.6.0.tgz
     version: 0.6.0
   - apiVersion: v2
-    created: "2023-04-19T14:59:08.121340898+01:00"
+    created: "2023-08-23T09:26:11.202529944+01:00"
     description: A Helm chart for deploying 1Integrate onto Kubernetes
     digest: 8c068fcd4bc5b23277fc1a72c645bf1d9fe9f15dc89f85c75d7db430a66b56e8
     name: 1integrate
@@ -38,7 +47,7 @@ entries:
     - charts/1integrate-0.5.0.tgz
     version: 0.5.0
   - apiVersion: v2
-    created: "2023-04-19T14:59:08.120789501+01:00"
+    created: "2023-08-23T09:26:11.201984047+01:00"
     description: A Helm chart for deploying 1Integrate onto Kubernetes
     digest: 196612a792c5d482fe12e6375b993a3c86f5bc974acbe1b8225f5b3b42f8d084
     name: 1integrate
@@ -47,7 +56,7 @@ entries:
     - charts/1integrate-0.4.0.tgz
     version: 0.4.0
   - apiVersion: v2
-    created: "2023-04-19T14:59:08.120392002+01:00"
+    created: "2023-08-23T09:26:11.201579848+01:00"
     description: A Helm chart for deploying 1Integrate onto Kubernetes
     digest: 6faced33cdb606748e6e3309f2e074f5a72f37f320a42b148fb8075effffb100
     name: 1integrate
@@ -56,7 +65,7 @@ entries:
     - charts/1integrate-0.3.0.tgz
     version: 0.3.0
   - apiVersion: v2
-    created: "2023-04-19T14:59:08.119997304+01:00"
+    created: "2023-08-23T09:26:11.20116445+01:00"
     description: A Helm chart for deploying 1Integrate onto Kubernetes
     digest: 55b25b9ae81e090a7295c6ce218ded363ca5c9282b6c5b9cac3c5a8c7a57c030
     name: 1integrate
@@ -65,7 +74,7 @@ entries:
     - charts/1integrate-0.2.0.tgz
     version: 0.2.0
   - apiVersion: v2
-    created: "2023-04-19T14:59:08.119566406+01:00"
+    created: "2023-08-23T09:26:11.200766251+01:00"
     description: A Helm chart for deploying 1Integrate onto Kubernetes
     digest: af89d41666d8184a35d506d13d7cd29f4382f230a2e9f097ec1e680297a949f5
     name: 1integrate
@@ -76,7 +85,7 @@ entries:
   datagateway:
   - apiVersion: v2
     appVersion: 2.10.1
-    created: "2023-07-06T09:35:34.2809059+01:00"
+    created: "2023-08-23T09:26:11.219952875+01:00"
     description: A Helm chart for deploying 1Data Gateway onto Kubernetes
     digest: 2c0e4e1e3847a83755da6dfa3ef11956227720dbcae20dbcf3a600c4799cefa9
     name: datagateway
@@ -86,7 +95,7 @@ entries:
     version: 0.3.0
   - apiVersion: v2
     appVersion: 2.10.1
-    created: "2023-06-01T12:02:57.3225949+01:00"
+    created: "2023-08-23T09:26:11.219388777+01:00"
     description: A Helm chart for deploying 1Data Gateway onto Kubernetes
     digest: 099b407f1a803849f59576f9337c6b2edd056bd7f11b8d5145670ea0601c66dd
     name: datagateway
@@ -94,4 +103,4 @@ entries:
     urls:
     - charts/datagateway-0.2.0.tgz
     version: 0.2.0
-generated: "2023-07-06T09:35:34.2809059+01:00"
+generated: "2023-08-23T09:26:11.200139154+01:00"
