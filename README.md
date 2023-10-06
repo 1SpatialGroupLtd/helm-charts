@@ -1,6 +1,6 @@
 # Official 1Spatial Helm Charts
 
-This repository contains [Helm](https://helm.sh) charts for 1Spatial products.
+This repository contains [Helm](https://helm.sh) charts for 1Spatial products, used for deploying into Kubernetes environments. They are provided to help administrators install 1Spatial products by adding the helm repository to their environment and setting environment-specific values.
 
 ## Available Charts
 
