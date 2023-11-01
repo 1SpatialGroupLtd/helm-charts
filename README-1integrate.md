@@ -52,7 +52,7 @@ By default, 1Integrate will deploy with one fixed user: integrate/integrate1 but
 | `monitoring.environment` | Elastic APM 'environment' value |  `Nil`. |
 | `monitoring.log.level` | Elastic APM agent log level |  `INFO`. |
 | `cors.enabled` | Whether CORS is enabled |  `false`. |
-| `cors.allowed.origins` | The list of allowed origins for CORS |  `false`. |
+| `cors.hosts` | The comma separated list of allowed origins for CORS |  `false`. |
 | `jta.timeout` | The JTA timeout value to use in seconds |  `300`. |
 | `fileStorage.onDisk` | Whether to minimise database writes and store uploaded files on disk rather than in the repository. Should not be used with multiple interfaces. |  `false`. |
 | `fileStorage.size` | Storage size to request for the uploaded files (if enabled). |  `1Gi`. |
