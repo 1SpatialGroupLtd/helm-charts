@@ -7,12 +7,15 @@ Chart parameters are provided to allow you to configure the location of these de
 ## Required Parameters
 
 * `datagateway.db.jdbcUrl`: JDBC URL for the 1DG configuration database.
-  While this chart has only been tested with PostgreSQL, any database supported by 1DG should work.
+    While this chart has only been tested with PostgreSQL, any database supported by 1DG should work.
 * `datagateway.db.username`: Username for the 1DG configuration database (if required).
 * `datagateway.db.password`: Password for the 1DG configuration database (if required).
 
 
 * `ingress.hosts` : List of `host: <domain name>` pairs to route requests to 1DG.
+
+
+* `image.tag`: The image tag (1DataGateway version) to deploy.
 
 ## Commonly-used Optional Parameters
 
@@ -25,8 +28,8 @@ Chart parameters are provided to allow you to configure the location of these de
 
 
 * `datagateway.clamd.host`: Hostname to use for clamd virus scanner (default "").
-  If set to an empty string, then the virus scanner will be disabled.
-  The clamd host should have the 1DG media directory mounted at the same location as the 1DG container (default: /1datagateway/media).
+    If set to an empty string, then the virus scanner will be disabled.
+    The clamd host should have the 1DG media directory mounted at the same location as the 1DG container (default: /1datagateway/media).
 * `datagateway.clamd.port`: Port to connect to for virus scanning (default 3310).
 
 
@@ -47,7 +50,6 @@ Chart parameters are provided to allow you to configure the location of these de
 * `image.registry`: The registry where the 1DG docker images can be found, without a trailing slash (default "").
 * `image.repository`: Repository from which to pull Docker images.
 * `image.pullPolicy`: Allows overriding the default pull policy of IfNotPresent.
-* `image.tag`: Overrides the image tag whose default is the chart appVersion.
 
 
 * `nameOverride`: Allows overriding the chart name as used in the various chart resources.
