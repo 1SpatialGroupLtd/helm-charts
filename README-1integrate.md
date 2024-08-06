@@ -44,6 +44,7 @@ By default, 1Integrate will deploy with one fixed user: integrate/integrate1 but
 | `ingress.host` | The host that will be used to access 1Integrate on. |  `1integrate.local`. |
 | `image.pullPolicy` | [Kubernetes container pull policy](https://kubernetes.io/docs/concepts/containers/images/#updating-images) |  `IfNotPresent`. |
 | `imagePullSecrets` | [Kubernetes image pull secrets](https://kubernetes.io/docs/concepts/configuration/secret/#using-imagepullsecrets) |  `Nil`. |
+| `datastore.destination_file.zip64` | [4.4+ only] Whether to compress all Data Store output files with Zip64, allowing data files larger than 4GB to be created. |  `false`. |
 | `log.level` | 1Integrate's logging level, one of `DEBUG`, `INFO`, `WARN`, `ERROR` or `FATAL` |  `WARN`. |
 | `log.cloud` | Whether 1Integrate should produce cloud friendly logs. This changes the log format to JSON and enables pod annotations to allow log ingestion by the elastic framework via filebeat |  `false`. |
 | `monitoring.enabled` | Whether monitoring via Elastic APM is enabled |  `false`. |
