@@ -4,7 +4,7 @@ This Helm chart deploys 1Data Gateway into Kubernetes.
 It does not deploy either of it's required services (PostgreSQL and 1Integrate).
 Chart parameters are provided to allow you to configure the location of these dependencies.
 
-Helm chart version 0.5.0 supports Data Gateway versions 2.14.x and greater.
+To guarantee all documented configuration values are supported use Helm chart version 0.6.0 with a 1Data Gateway image of version 2.14.1 or greater.
 
 ## Required Parameters
 
@@ -138,6 +138,11 @@ When using the acutator endpoints with `datagateway.actutor.port` set remember t
 * `fullnameOverride`: Allows overriding the fully-qualified app name.
 
 * `datagateway.config`: Workaround while required properties have not yet been added to the helm chart. Allows arbitrary YAML to be added to the application config. (default {}).
+
+* `datagateway.defaultAdminPasswordSecret`: The name of the secret storing the default admin password.
+    Admin password will be updated to this value when the server restarts.
+    This can be created for example like `kubectl create secret generic mysecret --from-literal=password='password'`.
+    Note: if you need to change the password on upgrade then create a new secret and update your values file since the server needs to restart to pick up the new password and this is not triggered by a change of the secret value. (default undefined).
 
 ## Annotations
 *  <sup>1</sup> These values are only applied during initial chart installation.

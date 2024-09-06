@@ -164,6 +164,15 @@ entries:
     version: 1.0.0
   datagateway:
   - apiVersion: v2
+    created: "2024-09-06T13:56:46.984807368+01:00"
+    description: A Helm chart for deploying 1Data Gateway onto Kubernetes
+    digest: 2a6c37916d5090a649d72cd135eb59bcbfe0d95ac2a6cfa16dae4d078f6c682b
+    name: datagateway
+    type: application
+    urls:
+    - charts/datagateway-0.6.0.tgz
+    version: 0.6.0
+  - apiVersion: v2
     created: "2024-08-05T16:59:12.027499877+01:00"
     description: A Helm chart for deploying 1Data Gateway onto Kubernetes
     digest: c241c3cac3b7a1974f2fc10c5e5bb8efb3209b1ffa0be0f3c73606823fa735e9
@@ -201,4 +210,4 @@ entries:
     urls:
     - charts/datagateway-0.2.0.tgz
     version: 0.2.0
-generated: "2024-08-05T16:59:12.001348395+01:00"
+generated: "2024-09-06T13:56:46.984132266+01:00"
