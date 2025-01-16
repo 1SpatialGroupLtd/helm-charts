@@ -6,6 +6,7 @@ This repository contains [Helm](https://helm.sh) charts for 1Spatial products, u
 
 * [1Integrate](https://1spatial.com/products/1integrate/)
 * [1Data Gateway](https://1spatial.com/products/1data-gateway/)
+* [1Spatial Management Suite](https://1spatial.com/products/other-products/1spatial-management-suite/)
 
 ## Usage
 
@@ -27,5 +28,6 @@ e.g. for 1Integrate
 
 * [1Integrate](README-1integrate.md)
 * [1Data Gateway](README-datagateway.md)
+* [1Spatial Management Suite Gateway](README-1sms.md)
 
 Copyright (c) 1Spatial 2021
