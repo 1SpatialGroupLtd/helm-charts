@@ -4,7 +4,7 @@ This Helm chart deploys 1Data Gateway into Kubernetes.
 It does not deploy either of it's required services (PostgreSQL and 1Integrate).
 Chart parameters are provided to allow you to configure the location of these dependencies.
 
-To guarantee all documented configuration values are supported use Helm chart version 0.6.0 with a 1Data Gateway image of version 2.14.1 or greater.
+To guarantee all documented configuration values are supported use Helm chart version 0.7.0 with a 1Data Gateway image of version 2.15.0 or greater.
 
 ## Required Parameters
 
@@ -57,6 +57,10 @@ To guarantee all documented configuration values are supported use Helm chart ve
     If property is not empty then authentication mode will be set to use API Key. (default ""). <sup>1</sup>
 * `datagateway.integrate.cleanupInterval`: The interval at which 1Integrate sessions for finished submissions will be removed.
     Must be a valid duration (default 5m).
+* `datagateway.integrate.connectTimeout`: Maximum time until TCP connection is established. (Note: Only applied for some
+  requests, others like uploading or downloading large items of data use a longer timeout) (default 10s).
+* `datagateway.integrate.readTimeout`: Maximum time between data sent from the server. (Note: Only applied for some
+  requests, others like uploading or downloading large items of data use a longer timeout) (default 30s).
 
 ### Mail Sender Settings <sup>1</sup>
 
