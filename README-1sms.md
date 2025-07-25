@@ -11,7 +11,7 @@
 * 1sms-1integrate-engine
 * 1sms-job-orchestration
 
-**Latest version 1.1.0**
+**Latest version 1.2.0**
 
 ## Pre-requisites
 
@@ -21,13 +21,6 @@ The 1Spatial Management Suite components need access to an Oracle Database to st
 
 Before installing the product, you must create the necessary users and schemas. The database locations, schema names, and passwords are needed to configure the helm charts.
 Please refer to [1SMS Database Creation][] for further information.
-
-### RabbitMQ and cert-manager
-
-The 1Spatial Management Suite leverages RabbitMQ for internal service communication. RabbitMQ is a reliable and mature messaging and streaming broker, known for its ease of deployment in cloud environments.
-
-For optimal performance, it is recommended to deploy RabbitMQ on the same cluster as the 1SMS components.
-Please follow the official RabbitMQ instructions for deployment [RabbitMQ Topology Operator][]
 
 ### Temporal
 
@@ -99,6 +92,7 @@ For each component the following settings are required :
 | `repository.username` | Component repository database username.                                                                                                                                      |
 | `repository.password` | Component repository database password.                                                                                                                                      |
 | `opts`                | Additional system properties to pass into the components.                                                                                                                    |
+| `temporal.host`       | The internal to the cluster temporal frontend service host - e.g. temporal-frontend-headless.temporal.svc.cluster.local.                                                     |
 
 ### Feature Schema
 
@@ -111,22 +105,6 @@ For each component the following settings are required :
         username: featureSchemaUsername
         password: featureSchemaPassword
 ```
-
-### RabbitMQ Configuration
-
-1SMS v4 onwards RabbitMQ is used to enable messaging between components within the Kubernetes Cluster.
-All components apart from the 1sms-integrate-engine require a connection to RabbitMQ.
-
-```yaml
-  rabbitMq:
-    host: smsrabbithost.rabbitmq.svc.cluster.local
-    port: 5672
-    virtualHost: 1smsVirtualHost
-    username: 1smsUsername
-    password: 1smsPassword
-```
-
-_Note: The connection settings above are dependent on your RabbitMQ configuration._
 
 ### Component Specific Settings
 
@@ -169,7 +147,7 @@ The following needs to be set to deploy 1Spatial specific workflows to a local t
 ```yaml
   temporal:
     namespace: 1sms
-    url: temporal-frontend-headless.temporal.svc.cluster.local:7233
+    url: temporal-frontend-headless.temporal.svc.cluster.local
 ```
 
 ##### Security Schema Settings
@@ -236,8 +214,6 @@ _Note: Recommended number is a minimum of 2 replicas of 1sms-integrate-engine as
 | `imagePullSecrets` | [Kubernetes image pull secrets][]| `Nil`.|
 
 
-[RabbitMQ]: https://www.rabbitmq.com/
-[RabbitMQ Topology Operator]: https://www.rabbitmq.com/kubernetes/operator/install-topology-operator
 [Temporal.io]: https://temporal.io/
 [Temporal Helm Charts]: https://github.com/temporalio/helm-charts
 [1SMS Database Creation]: https://1spatial.com/documentation/1SMS/v3_0/Topics/1SMS_Database_Creation.htm
