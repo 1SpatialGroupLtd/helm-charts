@@ -82,17 +82,17 @@ For information on configuring 1Integrate Users and Roles, please refer to [1Int
 
 For each component the following settings are required :
 
-| Parameter             | Description                                                                                                                                                                  |
-|-----------------------|------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
-| `version`             | The docker image tag to use, e.g `4.0.0`.                                                                                                                                    |
+| Parameter             | Description                                                                                                                                                                                                |
+|-----------------------|------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
+| `version`             | The docker image tag to use, e.g `4.0.0`.                                                                                                                                                                  |
 | `security.url`        | Full JDBC connection string for the Security schema. Note this is the same schema across all components. Please consult [1SMS Job Orchestration Service](#1sms-job-orchestration-service) for differences. |
-| `security.username`   | Security schema database username.                                                                                                                                           |
-| `security.password`   | Security schema database password.                                                                                                                                           |
-| `repository.url`      | Full JDBC connection string for individual component repositories. Note 1Transact does not use this setting.                                                                 |
-| `repository.username` | Component repository database username.                                                                                                                                      |
-| `repository.password` | Component repository database password.                                                                                                                                      |
-| `opts`                | Additional system properties to pass into the components.                                                                                                                    |
-| `temporal.host`       | The internal to the cluster temporal frontend service host - e.g. temporal-frontend-headless.temporal.svc.cluster.local.                                                     |
+| `security.username`   | Security schema database username.                                                                                                                                                                         |
+| `security.password`   | Security schema database password.                                                                                                                                                                         |
+| `repository.url`      | Full JDBC connection string for individual component repositories. Note 1Transact does not use this setting.                                                                                               |
+| `repository.username` | Component repository database username.                                                                                                                                                                    |
+| `repository.password` | Component repository database password.                                                                                                                                                                    |
+| `opts`                | Additional system properties to pass into the components.                                                                                                                                                  |
+| `temporal.host`       | Temporal frontend service hostname. Can be internal to the kubernetes cluster - e.g. temporal-frontend-headless.temporal.svc.cluster.local.                                                                |
 
 ### Feature Schema
 
@@ -137,18 +137,74 @@ This needs to be applied to both the interface and engine components.
 |---------------------------------|---------------------------------------------------------------------------|-----------------------------------------------------------------------|
 | `1sms-1exchange.config.baseUrl` | 1Exchange Rest interface baseUrl needed to define 1Exchange package paths | `https://MY_INGRESS_URL/1exchange/rest`.                              |
 
-#### 1SMS Job Orchestration Service
+##### Conflict Resolution Name Mappings (Optional)
 
-##### Temporal Settings
-
-1SMS Job Orchestration Service requires Temporal.io service to run the 1SMS Workflows.
-The following needs to be set to deploy 1Spatial specific workflows to a local to the K8S cluster Temporal.
+To support conflict resolution through GO Loader and GO Publisher, the conflict resolution name mappings XML files must be provided. For each file, both the filename and file content must be provided. The filename must follow the required naming convention `<product>_translationConfig.xml`. An example translation configuration:
 
 ```yaml
-  temporal:
-    namespace: 1sms
-    url: temporal-frontend-headless.temporal.svc.cluster.local
+    translationConfig:
+      - name: "MyProduct1_translationConfig.xml"
+        content: |
+          <?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+          <TranslationSummary xmlns="http://www.snowflakesoftware.com/agent/translationConfig">
+              <tableTranslation>
+                  <table>TABLE1</table>
+                  <element>
+                      <name>Table1</name>
+                      <namespace>http://www.example.org/myschema</namespace>
+                  </element>
+                  <primaryKeyColumn>ID</primaryKeyColumn>
+                  <identifierElement>
+                      <name>identifier</name>
+                      <namespace>http://www.opengis.net/gml/3.2</namespace>
+                  </identifierElement>
+              </tableTranslation>
+              <tableTranslation>
+                  <table>TABLE2</table>
+                  <element>
+                      <name>Table2</name>
+                      <namespace>http://www.example.org/myschema</namespace>
+                  </element>
+                  <primaryKeyColumn>ID</primaryKeyColumn>
+                  <identifierElement>
+                      <name>identifier</name>
+                      <namespace>http://www.opengis.net/gml/3.2</namespace>
+                  </identifierElement>
+              </tableTranslation>
+          </TranslationSummary>
+      - name: "MyProduct2_translationConfig.xml"
+        content: |
+          <?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+          <TranslationSummary xmlns="http://www.snowflakesoftware.com/agent/translationConfig">
+              <tableTranslation>
+                  <table>TABLE3</table>
+                  <element>
+                      <name>Table3</name>
+                      <namespace>http://www.example.org/myschema</namespace>
+                  </element>
+                  <primaryKeyColumn>ID</primaryKeyColumn>
+                  <identifierElement>
+                      <name>identifier</name>
+                      <namespace>http://www.opengis.net/gml/3.2</namespace>
+                  </identifierElement>
+              </tableTranslation>
+              <tableTranslation>
+                  <table>TABLE4</table>
+                  <element>
+                      <name>Table4</name>
+                      <namespace>http://www.example.org/myschema</namespace>
+                  </element>
+                  <primaryKeyColumn>ID</primaryKeyColumn>
+                  <identifierElement>
+                      <name>identifier</name>
+                      <namespace>http://www.opengis.net/gml/3.2</namespace>
+                  </identifierElement>
+              </tableTranslation>
+          </TranslationSummary>
 ```
+See [1SMS Documentation](https://1spatial.com/documentation/1SMS/v3_0/Topics/1Exchange/1EXC_Conflict_Res.htm) for more information.
+
+#### 1SMS Job Orchestration Service
 
 ##### Security Schema Settings
 
