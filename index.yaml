@@ -2,7 +2,7 @@ apiVersion: v1
 entries:
   1integrate:
   - apiVersion: v2
-    created: "2025-07-22T10:43:03.622015371+01:00"
+    created: "2025-09-10T16:24:42.265344782+01:00"
     description: A Helm chart for deploying 1Integrate onto Kubernetes
     digest: 71c49074713e8c2688e07c86c7f73ea5786f1cd7c1b8c1ca4f0be63f71cba7cb
     name: 1integrate
@@ -11,7 +11,7 @@ entries:
     - charts/1integrate-1.3.0.tgz
     version: 1.3.0
   - apiVersion: v2
-    created: "2025-07-22T10:43:03.620922309+01:00"
+    created: "2025-09-10T16:24:42.263849251+01:00"
     description: A Helm chart for deploying 1Integrate onto Kubernetes
     digest: 7839c11d687d23feec2606786a807490f7180fbc085b5c3d384b55d7f5cd2c95
     name: 1integrate
@@ -20,7 +20,7 @@ entries:
     - charts/1integrate-1.2.0.tgz
     version: 1.2.0
   - apiVersion: v2
-    created: "2025-07-22T10:43:03.619836186+01:00"
+    created: "2025-09-10T16:24:42.263299391+01:00"
     description: A Helm chart for deploying 1Integrate onto Kubernetes
     digest: 725f343d028c39ff64507b89fd4c429bdcc1b5371893aafde06cca7e8914523e
     name: 1integrate
@@ -29,7 +29,7 @@ entries:
     - charts/1integrate-1.1.0.tgz
     version: 1.1.0
   - apiVersion: v2
-    created: "2025-07-22T10:43:03.619305533+01:00"
+    created: "2025-09-10T16:24:42.262755565+01:00"
     description: A Helm chart for deploying 1Integrate onto Kubernetes
     digest: 41e97d490a5ae333d8913b62b567737eced46fca233c09a4a10c77272ec61c35
     name: 1integrate
@@ -38,7 +38,7 @@ entries:
     - charts/1integrate-1.0.0.tgz
     version: 1.0.0
   - apiVersion: v2
-    created: "2025-07-22T10:43:03.618787654+01:00"
+    created: "2025-09-10T16:24:42.262233153+01:00"
     description: A Helm chart for deploying 1Integrate onto Kubernetes
     digest: 22e8e6477cc0a5b2ac35c83f6a8fe9abeb115efd27f2ca105b56341fb6b3164e
     name: 1integrate
@@ -47,7 +47,7 @@ entries:
     - charts/1integrate-0.7.0.tgz
     version: 0.7.0
   - apiVersion: v2
-    created: "2025-07-22T10:43:03.618279117+01:00"
+    created: "2025-09-10T16:24:42.261728862+01:00"
     description: A Helm chart for deploying 1Integrate onto Kubernetes
     digest: f4c2ad32cde0d60ead765f291bb32e8dc8d9f2cf89c1ab2cd133618388896f53
     name: 1integrate
@@ -56,7 +56,7 @@ entries:
     - charts/1integrate-0.6.0.tgz
     version: 0.6.0
   - apiVersion: v2
-    created: "2025-07-22T10:43:03.617766131+01:00"
+    created: "2025-09-10T16:24:42.261237949+01:00"
     description: A Helm chart for deploying 1Integrate onto Kubernetes
     digest: 8c068fcd4bc5b23277fc1a72c645bf1d9fe9f15dc89f85c75d7db430a66b56e8
     name: 1integrate
@@ -65,7 +65,7 @@ entries:
     - charts/1integrate-0.5.0.tgz
     version: 0.5.0
   - apiVersion: v2
-    created: "2025-07-22T10:43:03.617283107+01:00"
+    created: "2025-09-10T16:24:42.260751058+01:00"
     description: A Helm chart for deploying 1Integrate onto Kubernetes
     digest: 196612a792c5d482fe12e6375b993a3c86f5bc974acbe1b8225f5b3b42f8d084
     name: 1integrate
@@ -74,7 +74,7 @@ entries:
     - charts/1integrate-0.4.0.tgz
     version: 0.4.0
   - apiVersion: v2
-    created: "2025-07-22T10:43:03.616908208+01:00"
+    created: "2025-09-10T16:24:42.260382612+01:00"
     description: A Helm chart for deploying 1Integrate onto Kubernetes
     digest: 6faced33cdb606748e6e3309f2e074f5a72f37f320a42b148fb8075effffb100
     name: 1integrate
@@ -83,7 +83,7 @@ entries:
     - charts/1integrate-0.3.0.tgz
     version: 0.3.0
   - apiVersion: v2
-    created: "2025-07-22T10:43:03.616527727+01:00"
+    created: "2025-09-10T16:24:42.259966456+01:00"
     description: A Helm chart for deploying 1Integrate onto Kubernetes
     digest: 55b25b9ae81e090a7295c6ce218ded363ca5c9282b6c5b9cac3c5a8c7a57c030
     name: 1integrate
@@ -92,7 +92,7 @@ entries:
     - charts/1integrate-0.2.0.tgz
     version: 0.2.0
   - apiVersion: v2
-    created: "2025-07-22T10:43:03.616122871+01:00"
+    created: "2025-09-10T16:24:42.259588388+01:00"
     description: A Helm chart for deploying 1Integrate onto Kubernetes
     digest: af89d41666d8184a35d506d13d7cd29f4382f230a2e9f097ec1e680297a949f5
     name: 1integrate
@@ -102,7 +102,16 @@ entries:
     version: 0.1.0
   1sms-1exchange:
   - apiVersion: v2
-    created: "2025-07-22T10:43:03.623149479+01:00"
+    created: "2025-09-10T16:24:42.266737116+01:00"
+    description: A Helm chart for deploying 1Exchange onto Kubernetes
+    digest: 9e9c4e830cca2abfb8749e3afa73bd6ebd24f1c3d44fc77b5f417b755df77b9f
+    name: 1sms-1exchange
+    type: application
+    urls:
+    - charts/1sms-1exchange-1.3.0.tgz
+    version: 1.3.0
+  - apiVersion: v2
+    created: "2025-09-10T16:24:42.266393799+01:00"
     description: A Helm chart for deploying 1Exchange onto Kubernetes
     digest: 7242c5b96a0698fff8e54dca0eb09152a09a1b2d245498ef1eea376b270f41eb
     name: 1sms-1exchange
@@ -111,7 +120,7 @@ entries:
     - charts/1sms-1exchange-1.2.0.tgz
     version: 1.2.0
   - apiVersion: v2
-    created: "2025-07-22T10:43:03.622765024+01:00"
+    created: "2025-09-10T16:24:42.266057669+01:00"
     description: A Helm chart for deploying 1Exchange onto Kubernetes
     digest: 450f07039ada63e6d9f3a78aef9b6b7cf2c0d321f619db24093aed76ad8c0196
     name: 1sms-1exchange
@@ -120,7 +129,7 @@ entries:
     - charts/1sms-1exchange-1.1.0.tgz
     version: 1.1.0
   - apiVersion: v2
-    created: "2025-07-22T10:43:03.622394552+01:00"
+    created: "2025-09-10T16:24:42.265712239+01:00"
     description: A Helm chart for deploying 1Exchange onto Kubernetes
     digest: d495cfa2a561f07418534451bce7db5bd1784a178708b2323eea1823b666813f
     name: 1sms-1exchange
@@ -130,7 +139,16 @@ entries:
     version: 1.0.0
   1sms-1integrate-engine:
   - apiVersion: v2
-    created: "2025-07-22T10:43:03.624016964+01:00"
+    created: "2025-09-10T16:24:42.267813608+01:00"
+    description: A Helm chart for deploying the 1Integrate Engine for 1SMS onto Kubernetes
+    digest: 39d769f4767db676a2fa4c1f60d06843e5bd2a8cfe40eebd45bc0e56dc41c549
+    name: 1sms-1integrate-engine
+    type: application
+    urls:
+    - charts/1sms-1integrate-engine-1.3.0.tgz
+    version: 1.3.0
+  - apiVersion: v2
+    created: "2025-09-10T16:24:42.267535046+01:00"
     description: A Helm chart for deploying the 1Integrate Engine for 1SMS onto Kubernetes
     digest: 8fc8a4693a5ca59e0640053184557ad7f310d1048e9108f7b2cfbd3c2878eb5f
     name: 1sms-1integrate-engine
@@ -139,7 +157,7 @@ entries:
     - charts/1sms-1integrate-engine-1.2.0.tgz
     version: 1.2.0
   - apiVersion: v2
-    created: "2025-07-22T10:43:03.623739074+01:00"
+    created: "2025-09-10T16:24:42.267271891+01:00"
     description: A Helm chart for deploying the 1Integrate Engine for 1SMS onto Kubernetes
     digest: 3652ce2ee77bfc746f9235fea9cf731130629732f847afc6a4e587a6a95b1f01
     name: 1sms-1integrate-engine
@@ -148,7 +166,7 @@ entries:
     - charts/1sms-1integrate-engine-1.1.0.tgz
     version: 1.1.0
   - apiVersion: v2
-    created: "2025-07-22T10:43:03.623457088+01:00"
+    created: "2025-09-10T16:24:42.267006098+01:00"
     description: A Helm chart for deploying the 1Integrate Engine for 1SMS onto Kubernetes
     digest: 95ba122f99c61422c26416f92a5f3140d7be2e0c7553507bdb16286b364e05d3
     name: 1sms-1integrate-engine
@@ -158,7 +176,17 @@ entries:
     version: 1.0.0
   1sms-1integrate-interface:
   - apiVersion: v2
-    created: "2025-07-22T10:43:03.624990528+01:00"
+    created: "2025-09-10T16:24:42.269122309+01:00"
+    description: A Helm chart for deploying the 1Integrate Interface for 1SMS onto
+      Kubernetes
+    digest: da34c1203bef99b69a959cb8b43acb947274e8a14149b26f26fe004b16b44b07
+    name: 1sms-1integrate-interface
+    type: application
+    urls:
+    - charts/1sms-1integrate-interface-1.3.0.tgz
+    version: 1.3.0
+  - apiVersion: v2
+    created: "2025-09-10T16:24:42.268801464+01:00"
     description: A Helm chart for deploying the 1Integrate Interface for 1SMS onto
       Kubernetes
     digest: 688a531509ca448ab998823364589fcfaf96c380a5a4e03d36b6f927c9a3a7c6
@@ -168,7 +196,7 @@ entries:
     - charts/1sms-1integrate-interface-1.2.0.tgz
     version: 1.2.0
   - apiVersion: v2
-    created: "2025-07-22T10:43:03.624657907+01:00"
+    created: "2025-09-10T16:24:42.268473731+01:00"
     description: A Helm chart for deploying the 1Integrate Interface for 1SMS onto
       Kubernetes
     digest: 56c1eda6c7b2090ddb7ba30f4c69efcfd1baf5499e1c9e8c35038aafa091f13a
@@ -178,7 +206,7 @@ entries:
     - charts/1sms-1integrate-interface-1.1.0.tgz
     version: 1.1.0
   - apiVersion: v2
-    created: "2025-07-22T10:43:03.624324434+01:00"
+    created: "2025-09-10T16:24:42.268118445+01:00"
     description: A Helm chart for deploying the 1Integrate Interface for 1SMS onto
       Kubernetes
     digest: b5aedd5fa6d9de5f8f5a81985690f4eab2dd08ff42a8d7b6f8475443ec4f92bc
@@ -189,7 +217,16 @@ entries:
     version: 1.0.0
   1sms-1plan:
   - apiVersion: v2
-    created: "2025-07-22T10:43:03.625899367+01:00"
+    created: "2025-09-10T16:24:42.27029894+01:00"
+    description: A Helm chart for deploying 1Plan onto Kubernetes
+    digest: cb1aee12f1cd917eb03bcfc7f33551a2fe99a8d38c292fe3558b62670c9431cb
+    name: 1sms-1plan
+    type: application
+    urls:
+    - charts/1sms-1plan-1.3.0.tgz
+    version: 1.3.0
+  - apiVersion: v2
+    created: "2025-09-10T16:24:42.269980265+01:00"
     description: A Helm chart for deploying 1Plan onto Kubernetes
     digest: 90df1daf97146224a254fb6ed5c4d26f99d93c44c2b6bc6f4fd720ba91dd2458
     name: 1sms-1plan
@@ -198,7 +235,7 @@ entries:
     - charts/1sms-1plan-1.2.0.tgz
     version: 1.2.0
   - apiVersion: v2
-    created: "2025-07-22T10:43:03.625606112+01:00"
+    created: "2025-09-10T16:24:42.269698536+01:00"
     description: A Helm chart for deploying 1Plan onto Kubernetes
     digest: d45a76b590271734b87cdab0a7eb2651272db424b5bac8574e66e4fd563862d9
     name: 1sms-1plan
@@ -207,7 +244,7 @@ entries:
     - charts/1sms-1plan-1.1.0.tgz
     version: 1.1.0
   - apiVersion: v2
-    created: "2025-07-22T10:43:03.625293049+01:00"
+    created: "2025-09-10T16:24:42.269412079+01:00"
     description: A Helm chart for deploying 1Plan onto Kubernetes
     digest: 0a2da188fb0c36acdb7c040e0fe87ec533202053090c898476d65af7902cecff
     name: 1sms-1plan
@@ -217,7 +254,16 @@ entries:
     version: 1.0.0
   1sms-1transact:
   - apiVersion: v2
-    created: "2025-07-22T10:43:03.626863746+01:00"
+    created: "2025-09-10T16:24:42.272533488+01:00"
+    description: A Helm chart for deploying 1Transact onto Kubernetes
+    digest: cc924e725ac5fe50725eb32a020dd3a6cac07e237858873e9db45c64c4370c68
+    name: 1sms-1transact
+    type: application
+    urls:
+    - charts/1sms-1transact-1.3.0.tgz
+    version: 1.3.0
+  - apiVersion: v2
+    created: "2025-09-10T16:24:42.272157115+01:00"
     description: A Helm chart for deploying 1Transact onto Kubernetes
     digest: 5323080530bc41084cf30d9ee5d7a051721fdcebf3f4433f2ab2d9cfc4985b6d
     name: 1sms-1transact
@@ -226,7 +272,7 @@ entries:
     - charts/1sms-1transact-1.2.0.tgz
     version: 1.2.0
   - apiVersion: v2
-    created: "2025-07-22T10:43:03.626532449+01:00"
+    created: "2025-09-10T16:24:42.271665901+01:00"
     description: A Helm chart for deploying 1Transact onto Kubernetes
     digest: 33013e6055a0a7e4e25ffd6fb896c2b2b1e8803df896de0aec127d3e66012673
     name: 1sms-1transact
@@ -235,7 +281,7 @@ entries:
     - charts/1sms-1transact-1.1.0.tgz
     version: 1.1.0
   - apiVersion: v2
-    created: "2025-07-22T10:43:03.626229104+01:00"
+    created: "2025-09-10T16:24:42.270568927+01:00"
     description: A Helm chart for deploying 1Transact onto Kubernetes
     digest: 153ddb63185de12c4ccd25bd820fcfe8215435bfd889e585930c309a9bffa3e7
     name: 1sms-1transact
@@ -245,7 +291,16 @@ entries:
     version: 1.0.0
   1sms-1workflow-worklist:
   - apiVersion: v2
-    created: "2025-07-22T10:43:03.628764661+01:00"
+    created: "2025-09-10T16:24:42.273802598+01:00"
+    description: A Helm chart for deploying 1Workflow Worklist onto Kubernetes
+    digest: deda23a690b6c311edfa840fb33bc84739a229a7af48ae404e544b43798e2454
+    name: 1sms-1workflow-worklist
+    type: application
+    urls:
+    - charts/1sms-1workflow-worklist-1.3.0.tgz
+    version: 1.3.0
+  - apiVersion: v2
+    created: "2025-09-10T16:24:42.273494167+01:00"
     description: A Helm chart for deploying 1Workflow Worklist onto Kubernetes
     digest: 8dc807bc5c0675c0c64d434d52b7e8a3c98783b25bdf232f9e322f09aa803989
     name: 1sms-1workflow-worklist
@@ -254,7 +309,7 @@ entries:
     - charts/1sms-1workflow-worklist-1.2.0.tgz
     version: 1.2.0
   - apiVersion: v2
-    created: "2025-07-22T10:43:03.627459986+01:00"
+    created: "2025-09-10T16:24:42.273177182+01:00"
     description: A Helm chart for deploying 1Workflow Worklist onto Kubernetes
     digest: 03e4586c9ce12db39010b5c57206a74db7fcb5fe23c04913f1d06795ee24a8cf
     name: 1sms-1workflow-worklist
@@ -263,7 +318,7 @@ entries:
     - charts/1sms-1workflow-worklist-1.1.0.tgz
     version: 1.1.0
   - apiVersion: v2
-    created: "2025-07-22T10:43:03.627145571+01:00"
+    created: "2025-09-10T16:24:42.27286021+01:00"
     description: A Helm chart for deploying 1Workflow Worklist onto Kubernetes
     digest: 9c3c1e57f15c59267506e842a7322ee8d29bf0664efedfa68884193f72be6fc0
     name: 1sms-1workflow-worklist
@@ -273,7 +328,16 @@ entries:
     version: 1.0.0
   1sms-common:
   - apiVersion: v2
-    created: "2025-07-22T10:43:03.629465012+01:00"
+    created: "2025-09-10T16:24:42.274430671+01:00"
+    description: A Helm chart for deploying common 1SMS components onto Kubernetes
+    digest: b3791b41f940439c7b75267a4f6b60955d02d317175157930740e82d450c17c6
+    name: 1sms-common
+    type: application
+    urls:
+    - charts/1sms-common-1.3.0.tgz
+    version: 1.3.0
+  - apiVersion: v2
+    created: "2025-09-10T16:24:42.274266796+01:00"
     description: A Helm chart for deploying common 1SMS components onto Kubernetes
     digest: 65708e496173664a3ef634723f00d6c911b2d7fcd69d4010b68a8493877147f6
     name: 1sms-common
@@ -282,7 +346,7 @@ entries:
     - charts/1sms-common-1.2.0.tgz
     version: 1.2.0
   - apiVersion: v2
-    created: "2025-07-22T10:43:03.629282743+01:00"
+    created: "2025-09-10T16:24:42.274095367+01:00"
     description: A Helm chart for deploying common 1SMS components onto Kubernetes
     digest: d41022957273fe7166e4fe043b56d5d484fea3f9027926557c59673e743fcb3d
     name: 1sms-common
@@ -291,7 +355,7 @@ entries:
     - charts/1sms-common-1.1.0.tgz
     version: 1.1.0
   - apiVersion: v2
-    created: "2025-07-22T10:43:03.62909062+01:00"
+    created: "2025-09-10T16:24:42.27394895+01:00"
     description: A Helm chart for deploying common 1SMS components onto Kubernetes
     digest: 8b37a99eb970c8046088ddecbc2937fcc70922d2ee2f50f314f1731e40ace777
     name: 1sms-common
@@ -301,7 +365,16 @@ entries:
     version: 1.0.0
   1sms-configuration:
   - apiVersion: v2
-    created: "2025-07-22T10:43:03.629754248+01:00"
+    created: "2025-09-10T16:24:42.274945551+01:00"
+    description: A Helm chart for deploying the 1SMS Configuration Service onto Kubernetes
+    digest: c034c48c46019b9d6832ec204293605aefd93f032ac668a03ac942d1738ad8d9
+    name: 1sms-configuration
+    type: application
+    urls:
+    - charts/1sms-configuration-1.3.0.tgz
+    version: 1.3.0
+  - apiVersion: v2
+    created: "2025-09-10T16:24:42.274685562+01:00"
     description: A Helm chart for deploying the 1SMS Configuration Service onto Kubernetes
     digest: 68929f4b034c532a7fc58670d27fa24f144fa6c6019dd92a0221cb3c0298d03c
     name: 1sms-configuration
@@ -311,7 +384,17 @@ entries:
     version: 1.2.0
   1sms-job-orchestration:
   - apiVersion: v2
-    created: "2025-07-22T10:43:03.630305049+01:00"
+    created: "2025-09-10T16:24:42.275673486+01:00"
+    description: A Helm chart for deploying the 1SMS Job Orchestration Service onto
+      Kubernetes
+    digest: e2d652d72406252ed4d2e36fe1a5689918661c87cf761d608b8d1fa726c09999
+    name: 1sms-job-orchestration
+    type: application
+    urls:
+    - charts/1sms-job-orchestration-1.3.0.tgz
+    version: 1.3.0
+  - apiVersion: v2
+    created: "2025-09-10T16:24:42.275429847+01:00"
     description: A Helm chart for deploying the 1SMS Job Orchestration Service onto
       Kubernetes
     digest: 56583d2f66ca8fc4cd445e3373448fdc3bee7fdc1f18e01b9e4549a02fe70968
@@ -321,7 +404,7 @@ entries:
     - charts/1sms-job-orchestration-1.2.0.tgz
     version: 1.2.0
   - apiVersion: v2
-    created: "2025-07-22T10:43:03.630047059+01:00"
+    created: "2025-09-10T16:24:42.275193592+01:00"
     description: A Helm chart for deploying the 1SMS Job Orchestration Service onto
       Kubernetes
     digest: 7c406f6360d20d33cade5635ed9cc2e4525b69e9af35b222bf71ff067eaf952b
@@ -332,7 +415,16 @@ entries:
     version: 1.1.0
   1sms-ui:
   - apiVersion: v2
-    created: "2025-07-22T10:43:03.630524471+01:00"
+    created: "2025-09-10T16:24:42.27607905+01:00"
+    description: A Helm chart for deploying the 1SMS User Interface onto Kubernetes
+    digest: 72cd7bffe92b1413e9d8bafba6806ae4a15045c459ed1b926b9c3bf842e6679e
+    name: 1sms-ui
+    type: application
+    urls:
+    - charts/1sms-ui-1.3.0.tgz
+    version: 1.3.0
+  - apiVersion: v2
+    created: "2025-09-10T16:24:42.275874466+01:00"
     description: A Helm chart for deploying the 1SMS User Interface onto Kubernetes
     digest: 1d87747597df7ef3d38c34bb1c97ce3e3819ac75d1c485b62fd77d29ce6cfef7
     name: 1sms-ui
@@ -342,7 +434,7 @@ entries:
     version: 1.2.0
   datagateway:
   - apiVersion: v2
-    created: "2025-07-22T10:43:03.63304542+01:00"
+    created: "2025-09-10T16:24:42.279445688+01:00"
     description: A Helm chart for deploying 1Data Gateway onto Kubernetes
     digest: b3242afc25a3eee9dd593a992438cb35bf83440ba6d33872f485062f9defa57b
     name: datagateway
@@ -351,7 +443,7 @@ entries:
     - charts/datagateway-0.7.0.tgz
     version: 0.7.0
   - apiVersion: v2
-    created: "2025-07-22T10:43:03.63255105+01:00"
+    created: "2025-09-10T16:24:42.278944292+01:00"
     description: A Helm chart for deploying 1Data Gateway onto Kubernetes
     digest: 2a6c37916d5090a649d72cd135eb59bcbfe0d95ac2a6cfa16dae4d078f6c682b
     name: datagateway
@@ -360,7 +452,7 @@ entries:
     - charts/datagateway-0.6.0.tgz
     version: 0.6.0
   - apiVersion: v2
-    created: "2025-07-22T10:43:03.632072976+01:00"
+    created: "2025-09-10T16:24:42.278418835+01:00"
     description: A Helm chart for deploying 1Data Gateway onto Kubernetes
     digest: c241c3cac3b7a1974f2fc10c5e5bb8efb3209b1ffa0be0f3c73606823fa735e9
     name: datagateway
@@ -369,7 +461,7 @@ entries:
     - charts/datagateway-0.5.0.tgz
     version: 0.5.0
   - apiVersion: v2
-    created: "2025-07-22T10:43:03.631586337+01:00"
+    created: "2025-09-10T16:24:42.277148971+01:00"
     description: A Helm chart for deploying 1Data Gateway onto Kubernetes
     digest: 63f56a05bf5526647f3fa9d9e00788175683ccbc5097befe2cd4ce46baecc357
     name: datagateway
@@ -379,7 +471,7 @@ entries:
     version: 0.4.0
   - apiVersion: v2
     appVersion: 2.10.1
-    created: "2025-07-22T10:43:03.631240921+01:00"
+    created: "2025-09-10T16:24:42.27680172+01:00"
     description: A Helm chart for deploying 1Data Gateway onto Kubernetes
     digest: 2c0e4e1e3847a83755da6dfa3ef11956227720dbcae20dbcf3a600c4799cefa9
     name: datagateway
@@ -389,7 +481,7 @@ entries:
     version: 0.3.0
   - apiVersion: v2
     appVersion: 2.10.1
-    created: "2025-07-22T10:43:03.63087884+01:00"
+    created: "2025-09-10T16:24:42.276450311+01:00"
     description: A Helm chart for deploying 1Data Gateway onto Kubernetes
     digest: 099b407f1a803849f59576f9337c6b2edd056bd7f11b8d5145670ea0601c66dd
     name: datagateway
@@ -397,4 +489,4 @@ entries:
     urls:
     - charts/datagateway-0.2.0.tgz
     version: 0.2.0
-generated: "2025-07-22T10:43:03.615577188+01:00"
+generated: "2025-09-10T16:24:42.258983197+01:00"
