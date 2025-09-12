@@ -66,7 +66,7 @@ a suitable filter will ensure that only relevant groups are listed.
 Each user who needs to use 1SMS must be allocated the appropriate roles.
 The main roles required are :
 
-* **1SMS_Admin**: User role with permissions to view and edit administration and configuration.
+* **1SMS_admin**: User role with permissions to view and edit administration and configuration.
 * **planner**: User role with permissions to view, create and edit 1SMS Jobs via 1Plan.
 * **worker**: Minimal user role with permissions sufficient to run a 1SMS Job end to end via API or user interfaces.
 
