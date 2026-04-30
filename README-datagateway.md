@@ -4,7 +4,7 @@ This Helm chart deploys 1Data Gateway into Kubernetes.
 It does not deploy either of it's required services (PostgreSQL and 1Integrate).
 Chart parameters are provided to allow you to configure the location of these dependencies.
 
-To guarantee all documented configuration values are supported use Helm chart version 0.7.0 with a 1Data Gateway image of version 2.15.0 or greater.
+To guarantee all documented configuration values are supported use Helm chart version 0.8.0 with a 1Data Gateway image of version 2.17.0 or greater.
 
 ## Required Parameters
 
@@ -79,7 +79,9 @@ To guarantee all documented configuration values are supported use Helm chart ve
 * `datagateway.site.name`: The name of the site (default unconfigured).
 * `datagateway.site.rootUrl`: The base URL where the site is accessed (if deployed behind a proxy this should be the publicly accessible address).
     Must be a valid URI specifying the scheme and hostname with no user info, query or fragment (default unconfigured).
-* `datagateway.site.loginTitle`: The title displayed to the unauthenticated user on the login screen (default unconfigured).
+* `datagateway.site.loginBanner`: HTML content displayed to unauthenticated users on the login screen (default unconfigured).
+* `datagateway.site.loginTitle`: Deprecated for removal in the next release of this Helm chart.
+  Equivalent to `datagateway.site.loginBanner` wrapped in `<h3>...</h3>`.
 * `datagateway.site.helpUrl`: Overrides the default help URL.
     Must be a valid URI specifying the scheme and hostname with no user info, query or fragment (default unconfigured).
 
